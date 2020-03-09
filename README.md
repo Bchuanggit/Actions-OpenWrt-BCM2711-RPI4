@@ -1,3 +1,11 @@
+# 基于OpenWrt官方源码编译的树莓派4固件
+- 支持ipv6
+- 支持Clash 来自https://github.com/frainzy1477/luci-app-clash
+- 支持解除网易云音乐播放限制 来自https://github.com/project-openwrt/luci-app-unblockneteasemusic
+- 基础服务
+
+![](基础服务.png)
+
 # Actions-OpenWrt
 
 [![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
