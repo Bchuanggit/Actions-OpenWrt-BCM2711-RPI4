@@ -18,5 +18,7 @@ sed -i "s/'UTC'/'CST-8'\n                set system.@system[-1].zonename='Asia\/
 git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic package/luci-app-unblockneteasemusic
 #Clash
 git clone https://github.com/frainzy1477/luci-app-clash package/luci-app-clash
-#修复Clash随OpenWrt官方源码一起编译出现的依赖冲突和openssl-util依赖包强制https访问造成的卡顿
-sed -i 's/+luci +luci-base +wget +iptables +coreutils-base64 +coreutils +coreutils-nohup +bash +ipset +libustream-openssl +libopenssl +openssl-util +curl +jsonfilter +ca-certificates/+wget +iptables +coreutils-base64 +coreutils +coreutils-nohup +bash +ipset +libustream-openssl +libopenssl +curl +jsonfilter +ca-certificates/' package/luci-app-clash/Makefile
+#修复Clash随OpenWrt官方源码一起编译出现的依赖冲突
+sed -i 's/+luci +luci-base +wget +iptables +coreutils-base64 +coreutils +coreutils-nohup +bash +ipset +libustream-openssl +libopenssl +openssl-util +curl +jsonfilter +ca-certificates/+wget +iptables +coreutils-base64 +coreutils +coreutils-nohup +bash +ipset +libustream-openssl +libopenssl +openssl-util +curl +jsonfilter +ca-certificates/' package/luci-app-clash/Makefile
+#关闭http转向https
+sed -i 's/option redirect_https\t1/option redirect_https\t0/' package/network/services/uhttpd/files/uhttpd.config
