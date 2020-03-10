@@ -5,8 +5,8 @@
 - 基础服务
 
 ![](基础服务.png)
-# 已知问题
-- 由于没有安装openssl-util依赖，所以Clash有些规则文件不能在线下载，但是可以自己下载后上传。
+# 已解决的问题
+- 解决了在官方源码下安装第三方Clash依赖openssl-util导致默认打开https而造成的进入管理界面卡顿问题。
 # Actions-OpenWrt
 
 [![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
