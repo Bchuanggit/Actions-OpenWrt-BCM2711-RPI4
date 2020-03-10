@@ -2,6 +2,8 @@
 - 支持ipv6
 - 支持Clash 来自https://github.com/frainzy1477/luci-app-clash
 - 支持解除网易云音乐播放限制 来自https://github.com/project-openwrt/luci-app-unblockneteasemusic
+- 默认添加AX88179 USB3.0网卡驱动和RTL8152 USB2.0网卡驱动
+- 添加了netdata性能监控工具 进入地址http://server.ip:19999/
 - 基础服务
 
 ![](基础服务.png)
