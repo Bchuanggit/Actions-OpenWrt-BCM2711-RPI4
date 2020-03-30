@@ -15,7 +15,7 @@ sed -i 's/root::0:0:99999:7:::/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999
 #设置北京时间
 sed -i "s/'UTC'/'CST-8'\n                set system.@system[-1].zonename='Asia\/Shanghai'/g" package/base-files/files/bin/config_generate
 #解除网易云音乐播放限制
-git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic package/luci-app-unblockneteasemusic
+#git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic package/luci-app-unblockneteasemusic
 #Clash
 git clone https://github.com/frainzy1477/luci-app-clash package/luci-app-clash
 #修复Clash随OpenWrt官方源码一起编译出现的依赖冲突
